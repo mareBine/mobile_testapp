@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "driver": "mysql",
+        "port": 3308,
+        "user": "root",
+        "password": "redhat",
+        "database": "test"
+    },
+
+    "production": {
+        "driver": "mysql",
+        "user": "root"
+    }
+}

@@ -1,0 +1,29 @@
+<ion-view view-title="gmaps api v2">
+    <ion-content>
+        <!--<div class="button-bar">-->
+        <!--<ion-item>-->
+
+        <!--</ion-item>-->
+
+        <!-- checkbox za sledenje -->
+        <!--
+        <span class="checkboxitem">
+            <ion-item class="item-toggle">
+                <span>Iskanje ({{ settings.watcherCalled }})</span>
+                <label class="toggle">
+                    <input type="checkbox" ng-model="settings.trackPosition">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </ion-item>
+        </span>
+        -->
+
+        <!-- div za prikaz google map -->
+        <div id="map_plugin" data-tap-disabled="true">
+            <span ng-click="getCurrentPosition()" class="button icon ion-icon ion-ios7-location">&nbsp;getPosition</span>
+        </div>
+
+    </ion-content>
+</ion-view>

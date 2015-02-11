@@ -1,0 +1,20 @@
+<ion-view view-title="List">
+    <ion-content>
+        <span ng-click="addItem()"
+              class="button icon ion-wifi">&nbsp;addItemToList
+        </span>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right"
+                      ng-repeat="list in listData.getAllData" type="item-text-wrap" href="#/tab/list/{{list.id}}">
+                <h2>{{list.id}} {{list.username}}</h2>
+
+                <p>{{list.password}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+
+                <ion-option-button class="button-assertive" ng-click="removeItem(list.id)">
+                    Briši
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

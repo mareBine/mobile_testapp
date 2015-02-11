@@ -1,0 +1,82 @@
+<ion-view view-title="Wifi scanner">
+    <ion-content class="">
+        <!-- gumb za iskat APje -->
+        <span ng-click="getWifiAccessPoints()"
+              class="button icon ion-wifi">&nbsp;getWifiAPs
+        </span>
+
+        <!-- checkbox za konstantno iskanje -->
+        <span class="checkboxitem">
+            <ion-item class="item-toggle">
+                <span>Skeniraj</span>
+                <label class="toggle">
+                    <input type="checkbox" ng-model="settings.trackWifi">
+
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </ion-item>
+        </span>
+
+        <!-- rezultati wifiscannerja-->
+        <!--        <div class="list card">
+                    <div class="item item-divider">cordova.wifiscanner {{ wifitime }}</div>
+                    <div class="item item-body">
+                        <div ng-show="wifiscanner != {}">
+                            <ion-list>
+                                <ion-item ng-repeat="wifi in wifiscanner">
+                                    <label>BSSID</label>: <span>{{wifi.BSSID}}</span>
+                                    <br>
+                                    <label>SSID</label>: <span>{{wifi.SSID}}</span>
+                                    <br>
+                                    <label>level</label>: <span>{{wifi.level}}</span>
+                                </ion-item>
+                            </ion-list>
+                        </div>
+                    </div>
+                </div>-->
+
+        <div class="item item-divider">{{ wifitime }}</div>
+
+        <ion-list>
+            <ion-item ng-repeat="wifi in wifiscanner">
+                <label>BSSID</label>: <span>{{wifi.BSSID}}</span>
+                <br>
+                <label>SSID</label>: <span>{{wifi.SSID}}</span>
+                <br>
+                <label>level</label>: <span>{{wifi.level}}</span>
+            </ion-item>
+        </ion-list>
+
+
+        <!-- network info -->
+        <!--        <div class="list card">
+                    <div class="item item-divider">cordova.network-informations</div>
+                    <div class="item item-body">
+                        <span ng-click="getNetworkInfo()"
+                              class="button ion-podium">&nbsp;getNetworkInfo
+                        </span>
+                        <span ng-show="networkstatus != null">{{ networkstatus }}</span>
+                    </div>
+                </div>-->
+
+        <!-- podatki o napravi -->
+        <!--        <div class="list card">
+                    <div class="item item-divider">ionic.platform</div>
+                    <div class="item item-body">
+                        <ion-list>
+                            <ion-item ><label>platform</label>: <span>{{devicedata.platform}}</span></ion-item>
+                            <ion-item ><label>version</label>: <span>{{devicedata.version}}</span></ion-item>
+                            <ion-item ><label>isWebView</label>: <span>{{devicedata.isWebView}}</span></ion-item>
+                            <ion-item ><label>isAndroid</label>: <span>{{devicedata.isAndroid}}</span></ion-item>
+                            <ion-item ><label>isIOS</label>: <span>{{devicedata.isIOS}}</span></ion-item>
+                        </ion-list>
+                    </div>
+                </div>-->
+
+    </ion-content>
+</ion-view>
+
+
+

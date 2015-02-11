@@ -1,0 +1,19 @@
+<ion-view view-title="Sledenje">
+    <ion-content>
+        <!-- checkbox za sledenje -->
+        <ion-item class="item-toggle">
+            <span class="button-icon ion-ios7-navigate"></span>Vklopi sledenje
+            <label class="toggle">
+                <input type="checkbox" ng-model="settings.trackPosition">
+
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </ion-item>
+
+        <!-- google map -->
+        <div id="map_tracking" data-tap-disabled="true"></div>
+
+    </ion-content>
+</ion-view>

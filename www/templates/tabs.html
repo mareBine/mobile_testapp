@@ -1,0 +1,51 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+    <!-- Dashboard Tab -->
+    <ion-tab title="Wifi" icon-off="ion-ios7-pulse" icon-on="ion-ios7-pulse-strong" href="#/tab/dash">
+        <ion-nav-view name="tab-dash"></ion-nav-view>
+    </ion-tab>
+
+    <!-- Zemljevid (plugin) v2 -->
+    <!--<ion-tab title="gmaps api v2" icon-off="ion-ios7-world-outline" icon-on="ion-ios7-world"-->
+             <!--href="#/tab/gmaps">-->
+        <!--<ion-nav-view name="tab-gmaps"></ion-nav-view>-->
+    <!--</ion-tab>-->
+
+    <!-- zemljevid (html) v3-->
+    <!--<ion-tab title="gmaps api v3" icon-off="ion-ios7-world-outline" icon-on="ion-ios7-world"-->
+             <!--href="#/tab/maps">-->
+        <!--<ion-nav-view name="tab-maps"></ion-nav-view>-->
+    <!--</ion-tab>-->
+
+    <!-- Tracking Tab -->
+    <!--<ion-tab title="Sledenje" icon-off="ion-ios7-navigate-outline" icon-on="ion-ios7-navigate"-->
+             <!--href="#/tab/tracking">-->
+        <!--<ion-nav-view name="tab-tracking"></ion-nav-view>-->
+    <!--</ion-tab>-->
+
+    <!-- Camera Tab -->
+    <!--<ion-tab title="Kamera" icon-off="ion-ios7-camera-outline" icon-on="ion-ios7-camera" href="#/tab/camera">-->
+        <!--<ion-nav-view name="tab-camera"></ion-nav-view>-->
+    <!--</ion-tab>-->
+
+    <!-- List Tab -->
+    <ion-tab title="List" icon-off="ion-ios7-chatboxes-outline" icon-on="ion-ios7-chatboxes" href="#/tab/list">
+        <ion-nav-view name="tab-list"></ion-nav-view>
+    </ion-tab>
+
+    <!-- Chats Tab -->
+    <ion-tab title="Chats" icon-off="ion-ios7-heart-outline" icon-on="ion-ios7-heart" href="#/tab/chats">
+        <ion-nav-view name="tab-chats"></ion-nav-view>
+    </ion-tab>
+
+    <!-- Friends Tab -->
+    <!--  <ion-tab title="Prijatelji" icon-off="ion-ios7-heart-outline" icon-on="ion-ios7-heart" href="#/tab/friends">
+        <ion-nav-view name="tab-friends"></ion-nav-view>
+      </ion-tab>-->
+
+</ion-tabs>
