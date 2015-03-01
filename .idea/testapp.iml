@@ -2,6 +2,10 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/api_sails/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/api_sails/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/api_sails/tasks" />
+      <excludeFolder url="file://$MODULE_DIR$/api_sails/views" />
       <excludeFolder url="file://$MODULE_DIR$/hooks" />
       <excludeFolder url="file://$MODULE_DIR$/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/plugins" />
